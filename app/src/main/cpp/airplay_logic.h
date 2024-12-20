@@ -1,0 +1,22 @@
+//
+// Created by Lenovo on 2024/2/20.
+//
+
+#ifndef AIRPLAYSERVER_AIRPLAY_LOGIC_H
+#define AIRPLAYSERVER_AIRPLAY_LOGIC_H
+#include "j4a_base.h"
+
+void J4A_loadClass__J4AC_com_smart_home_AirplayLogic__airplayPlayUrl(JNIEnv *env, jstring url,jfloat position);
+void J4A_loadClass__J4AC_com_smart_home_AirplayLogic__airplayPlayUrl__catchAll(JNIEnv *env, jstring url,jfloat position);
+void J4A_loadClass__J4AC_com_smart_home_AirplayLogic__airplayPlayUrl__withCString(JNIEnv *env, const char * url,float position);
+void J4A_loadClass__J4AC_com_smart_home_AirplayLogic__tearDown(JNIEnv *env);
+
+#define J4AC_AirplayLogic__airplayPlayUrl J4A_loadClass__J4AC_com_smart_home_AirplayLogic__airplayPlayUrl
+#define J4AC_AirplayLogic__airplayPlayUrl__catchAll J4A_loadClass__J4AC_com_smart_home_AirplayLogic__airplayPlayUrl__catchAll
+#define J4AC_AirplayLogic__airplayPlayUrl__withCString J4A_loadClass__J4AC_com_smart_home_AirplayLogic__airplayPlayUrl__withCString
+
+#define J4AC_AirplayLogic__tearDown J4A_loadClass__J4AC_com_smart_home_AirplayLogic__tearDown
+
+#define J4A_loadClass__J4AC_AirplayLogic J4A_loadClass__J4AC_com_smart_home_AirplayLogic
+
+#endif //AIRPLAYSERVER_AIRPLAY_LOGIC_H
